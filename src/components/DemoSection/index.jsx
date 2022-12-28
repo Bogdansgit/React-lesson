@@ -118,8 +118,8 @@ function DemoSection () {
 					}
 				</div>
 				<div className="btn-wrap">
-					{/* <button onClick={loadBeers} >Load more</button> */}
-					<Button onClick={loadBeers}>Load more</Button>
+					<button onClick={loadBeers} >Load more</button>
+					{/* <Button onClick={loadBeers}>Load more</Button> */}
 				</div>
 			</div>
 		</section>
