@@ -16,11 +16,11 @@ function Header () {
 						<img src={logo} className='logo' alt="logo" />
 					</NavLink>
 					<NavList>
-						<NavLink to={"/"}> <NavItem>Home</NavItem></NavLink>
-						<NavLink to={"/about"}> <NavItem>About</NavItem></NavLink>
-						<NavLink to={"/post"}> <NavItem>Post</NavItem></NavLink>
-						<NavLink to={"/"}> <NavItem>Item</NavItem></NavLink>
-						<NavLink to={"/"}> <NavItem>Item</NavItem></NavLink>
+						<NavItem to={"/"}>Home</NavItem>
+						<NavItem to={"/about"}>About</NavItem>
+						<NavItem to={"/*"}>Item</NavItem>
+						<NavItem to={"/*"}>Item</NavItem>
+						<NavItem to={"/contact"}>Contact</NavItem>
 					</NavList >
 				</div>
 			</div>

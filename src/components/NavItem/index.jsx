@@ -1,10 +1,12 @@
 import React from "react";
+import { NavLink } from 'react-router-dom';
+
 import "./style.scss";
 
 const NavItem = (props) => {
     return (
         <li className="navItem">
-            <a href={props.link}>{props.children}</a>
+            <NavLink className='navLink' to={props.to}>{props.children}</NavLink>
         </li>
     );
 }

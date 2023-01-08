@@ -3,7 +3,7 @@ import React from "react";
 function NoMatch () {
 
 	return (
-		<div>404 - Not Found</div>
+		<div className="container">404 - Not Found</div>
 	)
 };
 

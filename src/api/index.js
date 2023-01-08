@@ -1,5 +1,3 @@
-
-
 export const demoData = {
 	id: 1,
 	title: 'Lorem ipsum dolor sit amet, consectetur',
@@ -9,93 +7,77 @@ export const demoData = {
 	likes: 45
 };
 
-// export const cardData = [
-// 	{
-// 		id: 1,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 45667,
-// 		likes: 45
-// 	},
-// 	{
-// 		id: 2,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 45667,
-// 		likes: 45
-// 	},
-// 	{
-// 		id: 3,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 45667,
-// 		likes: 45
-// 	},
-// 	{
-// 		id: 4,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 45667,
-// 		likes: 45
-// 	},
-// 	{
-// 		id: 5,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 5667,
-// 		likes: 145
-// 	},
-// 	{
-// 		id: 6,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 445667,
-// 		likes: 245
-// 	},
-// 	{
-// 		id: 7,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 445667,
-// 		likes: 345
-// 	},
-// 	{
-// 		id: 8,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 45667,
-// 		likes: 7845
-// 	},
-// 	{
-// 		id: 9,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 45777667,
-// 		likes: 45
-// 	},
-// 	{
-// 		id: 10,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 65667,
-// 		likes: 67
-// 	},
-// 	{
-// 		id: 11,
-// 		title: 'Lorem ipsum dolor sit amet, consectetur',
-// 		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...',
-// 		image: '',
-// 		views: 456,
-// 		likes: 457
-// 	},
-// ];
+export const postsData = [
+	{
+		id: 1,
+		title: 'Post1',
+		description: 'Hello, world'
+	},
+	{
+		id: 2,
+		title: 'Post2',
+		description: 'Hello, world world'
+	},
+	{
+		id: 3,
+		title: 'Post3',
+		description: 'Hello, world world world world world world worldworld world world world world world world world worldworld worldworld world'
+	},
+	{
+		id: 4,
+		title: 'Post4',
+		description: 'Hello, world world world world'
+	},
+];
+
+export const tasksData = [
+	{
+		id: 1,
+		title: 'Task1',
+		description: 'Hello, world',
+		status: true,
+		pin: false,
+	},
+	{
+		id: 2,
+		title: 'Task2',
+		description: 'Hello, world world',
+		status: true,
+		pin: false,
+	},
+	{
+		id: 3,
+		title: 'Task3',
+		description: 'Hello, world world world world world world worldworld world world world world world world world worldworld worldworld world',
+		status: false,
+		pin: false,
+	},
+	{
+		id: 4,
+		title: 'Task4',
+		description: 'Hello, world world world world',
+		status: false,
+		pin: true,
+	},
+	{
+		id: 5,
+		title: 'Task5',
+		description: 'Hello, world world world world',
+		status: true,
+		pin: false,
+	},
+	{
+		id: 6,
+		title: 'Task6',
+		description: 'Hello, world world',
+		status: false,
+		pin: false,
+	},
+];
+
+export const userData = {
+	id: '',
+    firstName: '', 
+    lastName: '', 
+    position: '',
+}

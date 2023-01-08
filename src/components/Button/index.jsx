@@ -12,7 +12,7 @@ function Button ({children, ...props}) {
 				? props.withIcon
 					? <Link to={props.link} className="button">{children} <ArrowIcon /></Link>
 					: <Link to={props.link} className="button">{children}</Link>
-				: <button onClick={children} className="button">{children}</button>
+				: <button onClick={props.onClick} className="button">{children}</button>
 			}
 		</>
 	)

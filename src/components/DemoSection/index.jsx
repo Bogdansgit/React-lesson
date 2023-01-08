@@ -19,7 +19,7 @@ function DemoSection () {
 
 	const {views, likes} = demoData;
 
-	useEffect (() => {
+	useEffect (() => { 
 		loadBeers();
 	}, []);
 
@@ -68,7 +68,7 @@ function DemoSection () {
 				<form action="/" className="form">
 					<div className="select-bar">
 						<select className="select">
-							<option value="value" disabled default>Search...</option>
+							<option value="value" disabled>Search...</option>
 							<option value="value1" >Значение 1</option>
 							<option value="value2" >Значение 2</option>
 							<option value="value3">Значение 3</option>
@@ -100,7 +100,7 @@ function DemoSection () {
 				<div className="grid-container">
 					{
 						beers.map((beer) => (
-							<div className="card">
+							<div key={beer.id} className="card">
 								<div className="card__visual">
 									<img src={beer.image_url} alt={beer.name}/>
 								</div>
@@ -118,8 +118,7 @@ function DemoSection () {
 					}
 				</div>
 				<div className="btn-wrap">
-					<button onClick={loadBeers} >Load more</button>
-					{/* <Button onClick={loadBeers}>Load more</Button> */}
+					<Button onClick={loadBeers}>Load more</Button>
 				</div>
 			</div>
 		</section>

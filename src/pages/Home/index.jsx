@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 // import CardSection from "../../components/CardSection";
-import DemoSection from "../../components/DemoSection";
+// import DemoSection from "../../components/DemoSection";
 // import FilterSection from "../../components/FilterSection";
 import HeroSection from '../../components/HeroSection';
+
+const DemoSection = React.lazy(() => import('../../components/DemoSection'));
 
 function Home () {
 
@@ -11,7 +13,10 @@ function Home () {
 		<>
 			<HeroSection/>
 			{/* <FilterSection/> */}
-			<DemoSection/>
+			<Suspense fallback={<div>Loading...</div>}>
+				<DemoSection/>
+			</Suspense>
+			{/* <DemoSection/> */}
 			{/* <CardSection /> */}
 		</>
 	)

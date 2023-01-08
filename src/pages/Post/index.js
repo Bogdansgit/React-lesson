@@ -28,16 +28,17 @@ function Post () {
 	}
 
 	return (
+		
 		<div className="single-post">
-			{
-				beer.map((beer) => (
+			<div className="container">
+				{beer.map((beer) => (
 					<div key={beer.id}>
 						<h1>{beer.name}</h1>
 						<img src={beer.image_url} alt={beer.name} />
 						<p>{beer.description}</p>
 					</div>
-				))
-			}
+				))}
+			</div>
 		</div>
 	)
 };
