@@ -3,9 +3,11 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from "../layouts/layout";
 import PrivateLayout from "../layouts/PrivateLayout";
 import About from "../pages/About";
+import Bootstrap from '../pages/Bootstrap/Bootstrap';
 import Contact from "../pages/Contact";
 import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
+import Mui from '../pages/Mui/Mui';
 import NoMatch from "../pages/NoMatch";
 import Post from "../pages/Post";
 import Posts from "../pages/Posts";
@@ -25,6 +27,8 @@ function Router() {
 					<Route path="/post/:id" element={<Post />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/*" element={<NoMatch />} />
+					<Route path="/mui" element={<Mui />} />
+					<Route path="/bootstrap" element={<Bootstrap />} />
 			</Route >
 		</Routes>
 	)
