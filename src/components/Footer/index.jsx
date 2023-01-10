@@ -1,5 +1,3 @@
-import React from "react";
-
 import './style.scss'
 import NavItem from "../NavItem";
 import NavList from "../NavList";
@@ -19,7 +17,7 @@ function Footer () {
 					<div className="footer-content__col">
 						<div className="footer-items">
 							<h3>Top Category</h3>
-							<NavList orientation={'vertical'}>
+							<NavList orientation='vertical'>
 								<NavItem url='#'>Item</NavItem>
 								<NavItem url='#'>Item</NavItem>
 								<NavItem url='#'>Item</NavItem>
@@ -28,7 +26,7 @@ function Footer () {
 						</div>
 						<div className="footer-items">
 							<h3>Top Tag</h3>
-							<NavList orientation={'vertical'}>
+							<NavList orientation='vertical'>
 								<NavItem url='#'>Item</NavItem>
 								<NavItem url='#'>Item</NavItem>
 								<NavItem url='#'>Item</NavItem>
@@ -37,7 +35,7 @@ function Footer () {
 						</div>
 						<div className="footer-items">
 							<h3>Menu</h3>
-							<NavList orientation={'vertical'}>
+							<NavList orientation='vertical'>
 								<NavItem url='#'>Home</NavItem>
 								<NavItem url='#'>Item</NavItem>
 								<NavItem url='#'>Item</NavItem>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
@@ -15,7 +15,7 @@ import notify from "../../utils/notification.helpers";
 
 function Tasks () {
 	const [tasks, setTasks] = useState([...tasksData].sort((x, y) => {
-		return (x.pin === y.pin)? 0 : x.pin? -1 : 1;
+		return (x.pin === y.pin) ? 0 : x.pin? -1 : 1;
 	}));
 	const [editTaskId, setEditTaskId] = useState('');
 	const [editTaskTitle, setEditTaskTitle] = useState('');
@@ -121,20 +121,20 @@ function Tasks () {
 			</ul>
 			<Popup trigger={popup} setTrigger={setPopup}>
 				<form onSubmit={handleSubmit}>
-					<input type="text" placeholder="Task Title" name={'title'} />
-					<input type="text" placeholder="Task description" name={'desc'} />
+					<input type="text" placeholder="Task Title" name='title' />
+					<input type="text" placeholder="Task description" name='desc' />
 					<button type='submit'>create new task</button>
 				</form>
 			</Popup>
 			<Popup trigger={editPopup} setTrigger={setEditPopup}>
 				<form onSubmit={(e) => handleEditedTaskSubmit( e, editTaskTitle, editTaskDescription)}>
-					<input onChange={handleChange} type="text" placeholder="Task Title" name={'title'} value={editTaskTitle} />
-					<input onChange={handleChange} type="text" placeholder="Task description" name={'desc'} value={editTaskDescription} />
+					<input onChange={handleChange} type="text" placeholder="Task Title" name='title' value={editTaskTitle} />
+					<input onChange={handleChange} type="text" placeholder="Task description" name='desc' value={editTaskDescription} />
 					<button type='submit'>Edit Task</button>
 				</form>
 			</Popup>
 		</div>
 	)
-};
+}
 
 export default Tasks;

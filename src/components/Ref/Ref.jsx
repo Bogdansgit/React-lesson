@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 function Ref() {
   const secondWayForm = useRef(null);
@@ -23,7 +23,7 @@ function Ref() {
         <input type="text" id="name" name="name" />
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" />
-        <button onClick={firstWay}>Submit</button>
+        <button type="submit" onClick={firstWay}>Submit</button>
       </form>
       <form
         onSubmit={(e) => e.preventDefault()}

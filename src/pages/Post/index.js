@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
@@ -9,10 +9,6 @@ function Post () {
 	const [beer, setBeer] = useState([]);
 
 	const { id } = useParams();
-	
-	useEffect (() => {
-		loadBeers();
-	}, []);
 
 	const loadBeers = () => {
 		axios
@@ -27,15 +23,19 @@ function Post () {
 			})
 	}
 
+	useEffect (() => {
+		loadBeers();
+	}, []);
+
 	return (
 		
 		<div className="single-post">
 			<div className="container">
-				{beer.map((beer) => (
-					<div key={beer.id}>
-						<h1>{beer.name}</h1>
-						<img src={beer.image_url} alt={beer.name} />
-						<p>{beer.description}</p>
+				{beer.map((el) => (
+					<div key={el.id}>
+						<h1>{el.name}</h1>
+						<img src={el.image_url} alt={el.name} />
+						<p>{el.description}</p>
 					</div>
 				))}
 			</div>

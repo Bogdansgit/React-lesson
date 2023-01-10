@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
@@ -95,15 +95,15 @@ function Posts() {
 			</ul>
 			<Popup trigger={popup} setTrigger={setPopup}>
 				<form onSubmit={handleSubmit}>
-					<input type="text" placeholder="Post Title" name={'title'} />
-					<input type="text" placeholder="Post description" name={'desc'} />
+					<input type="text" placeholder="Post Title" name='title' />
+					<input type="text" placeholder="Post description" name='desc' />
 					<button type='submit'>create new post</button>
 				</form>
 			</Popup>
 			<Popup trigger={editPopup} setTrigger={setEditPopup}>
 				<form onSubmit={(e) => handleEditedPostSubmit( e, editPostTitle, editPostDescription)}>
-					<input onChange={handleChange} type="text" placeholder="Post Title" name={'title'} value={editPostTitle} />
-					<input onChange={handleChange} type="text" placeholder="Post description" name={'desc'} value={editPostDescription} />
+					<input onChange={handleChange} type="text" placeholder="Post Title" name='title' value={editPostTitle} />
+					<input onChange={handleChange} type="text" placeholder="Post description" name='desc' value={editPostDescription} />
 					<button type='submit'>Edit post</button>
 				</form>
 			</Popup>

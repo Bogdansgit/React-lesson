@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../Button";
 import Comment from "../Comments";
 import Views from "../Views";

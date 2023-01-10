@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from 'react';
 
 import './style.scss';
 import { Form, Input, Textarea } from "../../components/Form";
@@ -56,19 +56,19 @@ function Contact () {
 			<div className="container">
 				<Form onSubmit={handleSabmit}>
 					{error
-						? <Input className={'error'} type={"text"} name={'fname'} placeholder={"First Name"} value={contact.fname} onChange={handleChange} />
-						: <Input type={"text"} name={'fname'} placeholder={"First Name"} value={contact.fname} onChange={handleChange} />
+						? <Input className='error' type="text" name='fname' placeholder="First Name" value={contact.fname} onChange={handleChange} />
+						: <Input type="text" name='fname' placeholder="First Name" value={contact.fname} onChange={handleChange} />
 					}
 					{error
-						? <Input className={'error'} type={"text"} name={'lname'} placeholder={"Last Name"} value={contact.lname} onChange={handleChange} />
-						: <Input type={"text"} name={'lname'} placeholder={"Last Name"} value={contact.lname} onChange={handleChange} />
+						? <Input className='error' type="text" name='lname' placeholder="Last Name" value={contact.lname} onChange={handleChange} />
+						: <Input type="text" name='lname' placeholder="Last Name" value={contact.lname} onChange={handleChange} />
 					}
 					{error
-						? <Input className={'error'} type={"email"} name={'email'} placeholder={"Email"} value={contact.email} onChange={handleChange} />
-						: <Input type={"email"} name={'email'} placeholder={"Email"} value={contact.email} onChange={handleChange} />
+						? <Input className='error' type="email" name='email' placeholder="Email" value={contact.email} onChange={handleChange} />
+						: <Input type="email" name='email' placeholder="Email" value={contact.email} onChange={handleChange} />
 					}
-					<Input type={"tel"} name={'phone'} placeholder={"Phone"} value={contact.phone} onChange={handleChange} />
-					<Textarea name={'message'} placeholder={"Message"} value={contact.message} onChange={handleChange} />
+					<Input type="tel" name='phone' placeholder="Phone" value={contact.phone} onChange={handleChange} />
+					<Textarea name='message' placeholder="Message" value={contact.message} onChange={handleChange} />
 					<button type='submit'>Send</button>
 				</Form>
 			</div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import logo from "../../images/logo.svg";
@@ -12,15 +11,15 @@ function Header () {
 		<header className="header">
 			<div className="container">
 				<div className="header__content">
-					<NavLink to={"/"}>
+					<NavLink to="/">
 						<img src={logo} className='logo' alt="logo" />
 					</NavLink>
 					<NavList>
-						<NavItem to={"/"}>Home</NavItem>
-						<NavItem to={"/about"}>About</NavItem>
+						<NavItem to="/">Home</NavItem>
+						<NavItem to="/about">About</NavItem>
 						<NavItem to={"/*"}>Item</NavItem>
 						<NavItem to={"/*"}>Item</NavItem>
-						<NavItem to={"/contact"}>Contact</NavItem>
+						<NavItem to="/contact">Contact</NavItem>
 					</NavList >
 				</div>
 			</div>

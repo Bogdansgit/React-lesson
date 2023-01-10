@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from 'axios';
 import Select from 'react-select';
 
 import "./style.scss";
 import { demoData } from "../../api";
-import Button from "../Button";
 import Views from "../Views";
 import Comment from "../Comments";
-// import Card from "../Card";
+import Button from "../Button";
 
 function DemoSection () {
 	const BASE_URL = 'https://api.punkapi.com/v2/beers';
@@ -19,10 +18,6 @@ function DemoSection () {
 
 	const {views, likes} = demoData;
 
-	useEffect (() => { 
-		loadBeers();
-	}, []);
-
 	useEffect (() => {
 		setDemoBeers({...beers[0]});
 	}, [beers]);
@@ -30,7 +25,7 @@ function DemoSection () {
 	const loadBeers = () => {
 		axios
 			.get(BASE_URL, {
-				params: {page: page, per_page: 20}
+				params: {page, per_page: 20}
 			})
 			.then((res) => {
 				setBeers([...beers, ...res.data]);
@@ -41,6 +36,11 @@ function DemoSection () {
 				console.log(error);
 			})
 	}
+
+	useEffect (() => { 
+		loadBeers();
+	}, []);
+	
 	const options = [
 		{ value: 'chocolate', label: 'Chocolate' },
 		{ value: 'strawberry', label: 'Strawberry' },

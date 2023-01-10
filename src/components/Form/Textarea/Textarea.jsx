@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function Textarea({name, placeholder, value, onChange}) {
 

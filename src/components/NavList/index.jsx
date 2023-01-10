@@ -1,7 +1,6 @@
-import React from "react";
 import "./style.scss";
 
-const NavList = ({children, orientation}) => {
+function NavList({children, orientation}) {
 
     const navStyle = orientation === 'vertical' ? 'vertical' : 'horizontal';
 

@@ -1,10 +1,7 @@
-import React from "react";
-
 import "./style.scss";
 import NavItem from "../NavItem";
 
-const Sidebar = () => {
-
+function Sidebar() {
     return (
         <div className="sidebar">
             <NavItem to='/dashboard'>Dashboard</NavItem>

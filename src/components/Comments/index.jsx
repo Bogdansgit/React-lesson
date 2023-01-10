@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import { ReactComponent as CommentIcon } from "../../images/comment.svg";
 
