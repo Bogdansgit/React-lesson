@@ -6,7 +6,7 @@ function Popup ({children, trigger, setTrigger}) {
 	return (trigger) ? (
 		<div className="popup">
 			<div className="popup-inner">
-				<div className="close-btn" onClick={() => setTrigger(false)}>X</div>
+				<button type="button" className="close-btn" onClick={() => setTrigger(false)}>X</button>
 				{children}
 			</div>
 		</div>

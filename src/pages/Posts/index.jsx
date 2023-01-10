@@ -74,7 +74,7 @@ function Posts() {
 		<div className="posts">
 			<div className="posts__top-line">
 				<h3>Posts</h3>
-				<div className="add" onClick={handleAddPosts}><AddPostIcon /></div>
+				<button type='button' className="add" onClick={handleAddPosts}><AddPostIcon /> </button>
 
 			</div>
 			<ul className="posts-list">
@@ -86,8 +86,8 @@ function Posts() {
 								<p>{post.description}</p>
 							</div>
 							<div className="icons-box">
-								<div className="edit" onClick={(e) => editPosts(e, post.id, post.title, post.description)}><EditIcon /></div>
-								<div className="remove" onClick={(e) => removePosts(e, post.id)}><DeleteIcon /></div>
+								<button type='button' className="edit" onClick={(e) => editPosts(e, post.id, post.title, post.description)}><EditIcon /> </button>
+								<button type='button' className="remove" onClick={(e) => removePosts(e, post.id)}><DeleteIcon /> </button>
 							</div>
 						</li>
 					))

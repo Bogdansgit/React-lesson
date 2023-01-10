@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import { useRef } from "react";
 
 function Ref() {
@@ -19,8 +20,8 @@ function Ref() {
   return (
     <>
       <form onSubmit={(e) => e.preventDefault()} id="first-way">
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" />
+        <label htmlFor="nameId">Name</label>
+        <input type="text" id="nameId" name="name" />
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" />
         <button type="submit" onClick={firstWay}>Submit</button>
@@ -34,7 +35,7 @@ function Ref() {
         <input type="text" id="name" name="name" />
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" />
-        <button onClick={secondWay}>Submit</button>
+        <button type="submit" onClick={secondWay}>Submit</button>
       </form>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>

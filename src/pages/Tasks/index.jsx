@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import { useState } from "react";
 
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -14,9 +15,8 @@ import notify from "../../utils/notification.helpers";
 
 
 function Tasks () {
-	const [tasks, setTasks] = useState([...tasksData].sort((x, y) => {
-		return (x.pin === y.pin) ? 0 : x.pin? -1 : 1;
-	}));
+	// eslint-disable-next-line no-nested-ternary
+	const [tasks, setTasks] = useState([...tasksData].sort((x, y) => (x.pin === y.pin) ? 0 : x.pin? -1 : 1));
 	const [editTaskId, setEditTaskId] = useState('');
 	const [editTaskTitle, setEditTaskTitle] = useState('');
 	const [editTaskDescription, setEditTaskDescription] = useState('');
@@ -84,9 +84,7 @@ function Tasks () {
 
 	const handlePinTask = (e, id) => {
 		e.preventDefault();
-		setTasks(tasks.map(task => task.id === id ? {...task, pin: !task.pin} : task).sort((x, y) => {
-			return (x.pin === y.pin)? 0 : x.pin? -1 : 1;
-		}));
+		setTasks(tasks.map(task => task.id === id ? {...task, pin: !task.pin} : task).sort((x, y) => (x.pin === y.pin)? 0 : x.pin? -1 : 1));
 	}
 
 
@@ -94,7 +92,7 @@ function Tasks () {
 		<div className="posts">
 			<div className="posts__top-line">
 				<h3>Tasks</h3>
-				<div className="add" onClick={handleAddTasks}><AddPostIcon /></div>
+				<button type="button" className="add" onClick={handleAddTasks}><AddPostIcon /> </button>
 
 			</div>
 			<ul className="posts-list">
@@ -102,18 +100,18 @@ function Tasks () {
 					tasks.map(task => (
 						<li key={task.id}>
 							<div className="posts-box">
-								<div className="complete" onClick={(e) => handleComplete(e, task.id)}>
+								<button type="button" className="complete" onClick={(e) => handleComplete(e, task.id)}>
 									{task.status ? <CheckBoxIcon /> : <CheckBoxOutlineBlankIcon />}
-								</div>
-								<div className="pin" onClick={(e) => handlePinTask(e, task.id)}>
+								</button>
+								<button type="button" className="pin" onClick={(e) => handlePinTask(e, task.id)}>
 									{task.pin ? <PushPinIcon /> : <PushPinIcon color="disabled" />}
-								</div>
+								</button>
 								<h4 >{task.title}</h4>
 								<p>{task.description}</p>
 							</div>
 							<div className="icons-box">
-								<div className="edit" onClick={(e) => editTasks(e, task.id, task.title, task.description)}><EditIcon /></div>
-								<div className="remove" onClick={(e) => removeTasks(e, task.id)}><DeleteIcon /></div>
+								<button type="button" className="edit" onClick={(e) => editTasks(e, task.id, task.title, task.description)}><EditIcon /> </button>
+								<button type="button" className="remove" onClick={(e) => removeTasks(e, task.id)}><DeleteIcon /> </button>
 							</div>
 						</li>
 					))

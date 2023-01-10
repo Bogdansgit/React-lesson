@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './App.css';
 import Router from './routes';
-import { UserContext } from './Context/userConetxt';
+import UserContext from './Context/userConetxt';
 import { userData } from './api';
 
 function App() {

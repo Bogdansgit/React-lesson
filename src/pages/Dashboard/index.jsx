@@ -156,7 +156,7 @@ function Dashboard() {
 							dataKey="value"
 						>
 							{data2.map((entry, index) => (
-								<Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+								<Cell fill={COLORS[index % COLORS.length]} />
 							))}
 						</Pie>
 					</PieChart>

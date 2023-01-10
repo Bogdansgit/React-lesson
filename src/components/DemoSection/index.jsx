@@ -6,7 +6,7 @@ import "./style.scss";
 import { demoData } from "../../api";
 import Views from "../Views";
 import Comment from "../Comments";
-import Button from "../Button";
+import Button from "../Button/Button";
 
 function DemoSection () {
 	const BASE_URL = 'https://api.punkapi.com/v2/beers';
@@ -21,6 +21,8 @@ function DemoSection () {
 	useEffect (() => {
 		setDemoBeers({...beers[0]});
 	}, [beers]);
+
+	console.log(isCompleted);
 
 	const loadBeers = () => {
 		axios

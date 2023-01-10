@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../Button/Button";
 import Comment from "../Comments";
 import Views from "../Views";
 

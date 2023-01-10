@@ -30,6 +30,8 @@ function FilterSection () {
 		})
 	}
 
+	console.log(beers);
+
 	return (
 		<section className="filter-section">
 			<div className="container">
